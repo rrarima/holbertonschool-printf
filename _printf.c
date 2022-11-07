@@ -47,7 +47,7 @@ int _printf(const char *format, ...)
 			;
 		}
 	}*/
-	printToScreen(str);
+
 	va_end(strings);
-	return(0);
+	return(printToScreen(str));
 }
