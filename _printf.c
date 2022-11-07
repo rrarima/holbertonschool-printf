@@ -1,7 +1,6 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
-#include <stdio.h> /*only temp, will refactor to remove putchar later*/
 #include "main.h"
 
 /**
@@ -21,7 +20,7 @@ int _printf(const char *format, ...)
 
 	while (str[i] != '\0')
 	{
-		putchar(str[i]);
+		_putchar(str[i]);
 		i = i + 1;
 	}
 	va_end(strings);
