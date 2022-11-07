@@ -1,0 +1,24 @@
+PRINTF(3)
+
+NAME
+	_printf - formatted output conversion
+
+SYNOPSIS
+	#include "main.h"
+	int _printf(const char *format, ...);
+	_putchar();
+
+DESCRIPTION
+	TBA
+
+RETURN VALUE
+	TBA
+
+BUGS
+	TBA
+
+SEE ALSO
+	printf(3)
+
+AUTHORS
+	Matt & Eps
