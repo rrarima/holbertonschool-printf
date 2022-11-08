@@ -34,7 +34,7 @@ int _printf(const char *format, ...)
 
 	va_start(strings, format);
 	i = 0;
-	str = format;
+	str = (char *)format;
 	/*
 	while (str[k])
 	{
