@@ -31,3 +31,11 @@ int printToScreen (char *str)
 	return(i);
 }
 
+int print_c (va_list strings)
+{
+	int c;
+
+	c = va_arg(strings, int);
+	_putchar(c);
+	return (1);
+}
