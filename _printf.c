@@ -30,7 +30,7 @@ int _printf(const char *format, ...)
 {
 	va_list strings;
 	int i;
-	int argCount
+	int argCount;
 	char *str;
 
 	va_start(strings, format);
