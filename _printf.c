@@ -1,25 +1,7 @@
-#include <unistd.h>
 #include <stdlib.h>
 #include <stdarg.h>
+#include <stdio.h>
 #include "main.h"
-
-/**
- * printToScreen - prints a string to standard output
- * @str: a string to be printed
- * Return - a count of characters printed
- */
-int printToScreen (char *str)
-{
-	int i;
-
-	i = 0;
-	while (str[i] != '\0')
-	{
-		_putchar(str[i]);
-		i = i + 1;
-	}
-	return(i);
-}
 
 /**
  * _printf - function that produces output according to a format.
@@ -53,7 +35,6 @@ int _printf(const char *format, ...)
 		}
 		i = i + 1;
 	}*/
-
 	va_end(strings);
 	return(printToScreen(str));
 }

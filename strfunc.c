@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "main.h"
 
 /**
@@ -89,4 +91,24 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 	return (dest);
+}
+/**
+ * insertString - insert one string into another
+ * @str: string to have another string inserted into
+ * @ins: string to _be_ inserted
+ * @pos: the location to insert the string
+ * @trim: the quantity of chars to be removed at the insertion site
+ * to use with % operators just set trim to 2
+ * Return: the new string
+ */
+char *insertString (char *str, char *ins, int pos, int trim)
+{
+	char *res;
+
+	res = malloc((_strlen(str) + _strlen(ins) - trim + 1) * sizeof(char));
+	_strncpy(res, str, pos);
+	res[pos] = '\0';
+	_strcat(res, ins);
+	_strcat(res, str + (pos + trim));
+	return (res);
 }
