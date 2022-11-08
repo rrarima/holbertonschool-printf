@@ -29,23 +29,29 @@ int printToScreen (char *str)
 int _printf(const char *format, ...)
 {
 	va_list strings;
-	int i, k;
+	int i;
+	int argCount
 	char *str;
 
 	va_start(strings, format);
 	i = 0;
 	str = (char *)format;
 	/*
-	while (str[k])
+	while (str[i])
 	{
-		if (str[k] == '%' && str[k + 1] == 's')
+		if (str[i] == '%')
 		{
-			;
+			if (str[i + 1] == 's')
+			{
+				str[i] =;insert string into the other string
+				argCount = argCount + 1;
+			}
+			if (str[i + 1] == 'c')
+			{
+				;
+			}
 		}
-	        else if ()
-		{
-			;
-		}
+		i = i + 1;
 	}*/
 
 	va_end(strings);
