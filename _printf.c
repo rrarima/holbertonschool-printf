@@ -37,8 +37,11 @@ int find_char(va_list ap, char c)
 	format_t f[] = {
 		{'c', print_c},
 		{'s', print_s},
+		{'i', print_i},
+		{'%', print_percent},
 		{'\0', NULL}
 	};
+
 	while (f[i].func != NULL)
 	{
 		if (f[i].specifier == c)
@@ -47,7 +50,5 @@ int find_char(va_list ap, char c)
 		}
 		i = i + 1;
 	}
-	_putchar('%');
-	_putchar(c);
 	return (2);
 }

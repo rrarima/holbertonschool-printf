@@ -4,7 +4,7 @@
  * @str: a string to be printed
  * Return - a count of characters printed
  */
-int _putstr (char *str)
+int _putstr(char *str)
 {
 	int i;
 
@@ -14,5 +14,5 @@ int _putstr (char *str)
 		_putchar(str[i]);
 		i = i + 1;
 	}
-	return(i);
+	return (i);
 }
