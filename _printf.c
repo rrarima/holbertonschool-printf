@@ -1,37 +1,53 @@
-#include <stdlib.h>
-#include <stdarg.h>
-#include <stdio.h>
 #include "main.h"
 
-/**
- * _printf - function that produces output according to a format.
- * @format: the data type of the output required
- * Return: 0, for now.
-*/
 int _printf(const char *format, ...)
 {
-	va_list strings;
-	char *str;
+	va_list ap;
+	int i, count_char = 0;
 
-	va_start(strings, format);
-	str = (char *)format;
-	/*
-	while (str[i])
+	if (format == NULL)
 	{
-		if (str[i] == '%')
+		return -1;
+	}
+
+	va_start(ap, format);
+
+	i = 0;
+	while (format[i] != '\0')
+	{
+		if (format[i] == '%')
 		{
-			if (str[i + 1] == 's')
-			{
-				str[i] =;insert string into the other string
-				argCount = argCount + 1;
-			}
-			if (str[i + 1] == 'c')
-			{
-				;
-			}
+			count_char += find_char(ap, format[i + 1]);
+			i = i + 1;
+		}
+		else
+		{
+			count_char = count_char + 1;
+			_putchar(format[i]);
 		}
 		i = i + 1;
-	}*/
-	va_end(strings);
-	return(printToScreen(str));
+	}
+	va_end(ap);
+	return (count_char);
+}
+
+int find_char(va_list ap, char c)
+{
+	int i = 0;
+	format_t f[] = {
+		{'c', print_c},
+		{'s', print_s},
+		{'\0', NULL}
+	};
+	while (f[i].func != NULL)
+	{
+		if (f[i].specifier == c)
+		{
+			return (f[i].func(ap));
+		}
+		i = i + 1;
+	}
+	_putchar('%');
+	_putchar(c);
+	return (2);
 }

@@ -1,18 +1,25 @@
-#ifndef _MAIN_H_
-#define _MAIN_H_
+#ifndef MAIN_H
+#define MAIN_H
 
+#include <stdio.h>
+#include <stdlib.h>
+#include <stdarg.h>
+#include <string.h>
+
+
+typedef struct
+{
+	char specifier;
+	int (*func)(va_list ap);
+} format_t;
+
+int _putchar(char c);
+int _putstr(char *);
 int _printf(const char *format, ...);
 
-/*from prifunc.c*/
-int _putchar(char c);
-int printToScreen (char *str);
+int find_char(va_list ap, char c);
 
-/*from strfunc.c*/
-char *_strcpy(char *dest, char *src);
-int _strlen(char *s);
-char *_strcat(char *dest, char *src);
-char *_strncpy(char *dest, char *src, int n);
-char *insertString (char *str, char *ins, int pos, int trim);
+int print_c(va_list ap);
+int print_s(va_list ap);
 
-
-#endif /* _MAIN_H_ */
+#endif
