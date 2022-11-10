@@ -50,6 +50,11 @@ int find_char(va_list ap, char c)
 		{'i', print_i},
 		{'d', print_i},
 		{'%', print_percent},
+		{'b', print_b},
+		{'o', print_o},
+		{'u', print_u},
+		{'x', print_x},
+		{'X', print_x},
 		{'\0', NULL}
 	};
 
