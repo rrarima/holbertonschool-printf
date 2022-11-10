@@ -1,5 +1,10 @@
 #include "main.h"
-
+/**
+* _printf - function that prints variable number of arguments
+* of different data types
+* @format: input that contains various arguments.
+* Return: subsequent arguments
+*/
 int _printf(const char *format, ...)
 {
 	va_list ap;
@@ -7,7 +12,7 @@ int _printf(const char *format, ...)
 
 	if (format == NULL || (format[0] == '%' && format[1] == '\0'))
 	{
-		return -1;
+		return (-1);
 	}
 
 	va_start(ap, format);
@@ -30,7 +35,12 @@ int _printf(const char *format, ...)
 	va_end(ap);
 	return (count_char);
 }
-
+/**
+* find_char - store format specifiers to functions
+* @ap: va_list that contains args
+* @c: char
+* Return: 2 (number of chars printed)
+*/
 int find_char(va_list ap, char c)
 {
 	int i = 0;

@@ -2,7 +2,7 @@
 /**
  * _putstr - prints a string to standard output
  * @str: a string to be printed
- * Return - a count of characters printed
+ * Return: a count of characters printed
  */
 int _putstr(char *str)
 {
