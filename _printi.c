@@ -57,7 +57,7 @@ int _printi_cap(unsigned int n, int base, int count)
 {
 	if (n !=0)
 	{
-		count = 1 + _printi((n/base), base, 0);
+		count = 1 + _printi_cap((n/base), base, 0);
 		if (n % base < 10)
 		{
 			_putchar('0' + n % base);
