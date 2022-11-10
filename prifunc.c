@@ -16,14 +16,14 @@ int print_c(va_list ap)
 */
 int print_s(va_list ap)
 {
-	char * str;
+	char *str;
 
-	str = va_arg(ap, char*); 
+	str = va_arg(ap, char*);
 	if (str == NULL)
 	{
 		str = "(null)";
 	}
-       	return (_putstr(str));
+	return (_putstr(str));
 }
 
 /**

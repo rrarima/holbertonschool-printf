@@ -61,5 +61,7 @@ int find_char(va_list ap, char c)
 		}
 		i = i + 1;
 	}
-	return (-1);
+	_putchar('%');
+	_putchar(c);
+	return (2);
 }
