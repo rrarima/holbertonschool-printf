@@ -20,9 +20,5 @@ int _printi(unsigned int n, int base, int count)
 			_putchar('A' + (n % base) - 10);
 		}
 	}
-	else
-	{
 		return (count);
-	}
-
 }
