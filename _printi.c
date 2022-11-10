@@ -1,11 +1,15 @@
 #include "main.h"
 
-void _printi(unsigned int n)
+int _printi(unsigned int n, int count)
 {
-	if (n > 9)
+        if (n != 0)
 	{
-		_printi(n/10);
+		count = 1 + _printi((n / 10), 0);
+		_putchar('0' + (n % 10));
+		return (count);
 	}
-
-	_putchar ((n % 10) + '0');
+	else
+	{
+		return (count);
+	}
 }

@@ -16,7 +16,7 @@ typedef struct
 int _putchar(char c);
 int _putstr(char *);
 int _printf(const char *format, ...);
-void _printi(unsigned int n);
+int _printi(unsigned int n, int count);
 
 int find_char(va_list ap, char c);
 
