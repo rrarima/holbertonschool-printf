@@ -48,9 +48,16 @@ int print_i(va_list ap)
 	{
 		unum = num;
 	}
-
+	if (num == 0)
+	{
+		_putchar('0');
+		return(1);
+	}
+	else
+	{
 	count = count + _printi(unum, 0);
 	return (count);
+	}
 }
 /**
 * print_percent - prints percent
