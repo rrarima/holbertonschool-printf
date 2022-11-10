@@ -7,8 +7,7 @@ int print_c(va_list ap)
 
 int print_s(va_list ap)
 {
-	_putstr(va_arg(ap, char*));
-	return (1);
+	return (_putstr(va_arg(ap, char*)));
 }
 
 int print_i(va_list ap)
