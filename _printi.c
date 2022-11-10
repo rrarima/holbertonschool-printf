@@ -7,6 +7,7 @@
 */
 int _printi(unsigned int n, int count)
 {
+<<<<<<< HEAD
 	if (n != 0)
 	{
 		count = 1 + _printi((n / 10), 0);
@@ -17,4 +18,5 @@ int _printi(unsigned int n, int count)
 	{
 		return (count);
 	}
+>>>>>>> matt
 }
