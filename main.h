@@ -7,7 +7,12 @@
 #include <string.h>
 #include <limits.h>
 
-typedef struct
+/**
+* struct format - structure that maps format specifier to func
+* @specifier: format specifier
+* @func: function to be called
+*/
+typedef struct format
 {
 	char specifier;
 	int (*func)(va_list ap);
