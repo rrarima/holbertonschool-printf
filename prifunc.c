@@ -33,17 +33,25 @@ int print_s(va_list ap)
 */
 int print_i(va_list ap)
 {
-	int num;
+	int num, count;
+	unsigned int unum;
 
+	count = 0;
 	num = va_arg(ap, int);
 	if (num < 0)
 	{
 		_putchar('-');
-		return (_printi(-num) + 1);
+		unum = num * -1;
+		count = count + 1;
 	}
-	return (_printi(num));
-}
+	else
+	{
+		unum = num;
+	}
 
+	count = count + _printi(unum, 0);
+	return (count);
+}
 /**
 * print_percent - prints percent
 * @ap: va_list that holds arguments from main func
