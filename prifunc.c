@@ -33,24 +33,15 @@ int print_s(va_list ap)
 */
 int print_i(va_list ap)
 {
-	int num, count;
-	unsigned int unum;
+	int num;
 
-	count = 0;
 	num = va_arg(ap, int);
 	if (num < 0)
 	{
 		_putchar('-');
-		unum = num * -1;
-		count = count + 1;
+		return (_printi(-num) + 1);
 	}
-	else
-	{
-		unum = num;
-	}
-
-	count = count + _printi(unum, 0);
-	return (count);
+	return (_printi(num));
 }
 
 /**
