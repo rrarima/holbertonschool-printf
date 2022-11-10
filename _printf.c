@@ -17,7 +17,7 @@ int _printf(const char *format, ...)
 	{
 		if (format[i] == '%')
 		{
-			count_char += find_char(ap, format[i + 1]);
+			count_char = count_char + find_char(ap, format[i + 1]);
 			i = i + 1;
 		}
 		else
@@ -38,6 +38,7 @@ int find_char(va_list ap, char c)
 		{'c', print_c},
 		{'s', print_s},
 		{'i', print_i},
+		{'d', print_i},
 		{'%', print_percent},
 		{'\0', NULL}
 	};
@@ -50,5 +51,5 @@ int find_char(va_list ap, char c)
 		}
 		i = i + 1;
 	}
-	return (2);
+	return (-1);
 }
