@@ -7,14 +7,10 @@
 */
 int _printi(unsigned int n, int count)
 {
-	if (n != 0)
+	if (n /10 != 0)
 	{
 		count = 1 + _printi((n / 10), 0);
-		_putchar('0' + (n % 10));
-		return (count);
 	}
-	else
-	{
-		return (count);
-	}
+	_putchar((n % 10) + '0');
+	return (1 + count);
 }
