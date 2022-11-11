@@ -45,13 +45,18 @@ int print_S(va_list ap)
 {
 	int i = 0;
 	int x;
-	char *str = va_arg(ap, char*);
+	char *str = va_arg(ap, char *);
+
+	if (str == NULL)
+	{
+		str = "(null)";
+	}
 
 
 	while (str[i] != '\0')
 	{
 		x = str[i];
-		if (x == 92 && str[i + 1] == 'n')
+		if (x == 92 || str[i + 1] == 'n')
 		{
 			_putchar('x');
 			_putchar('0');
@@ -63,6 +68,7 @@ int print_S(va_list ap)
 			_putchar(str[i]);
 			i = i + 1;
 		}
+		i = i + 1;
 	}
 	return (i);
 }
