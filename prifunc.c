@@ -67,7 +67,6 @@ int print_S(va_list ap)
 			_putchar(str[i]);
 			i = i + 1;
 		}
-		i = i + 1;
 	}
 	return (i);
 }
