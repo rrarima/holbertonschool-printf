@@ -57,6 +57,7 @@ int find_char(va_list ap, char c)
 		{'X', print_x_cap},
 		{'S', print_S},
 		{'p', print_p},
+		{'r', print_r},
 		{'\0', NULL}
 	};
 

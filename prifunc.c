@@ -93,3 +93,30 @@ int print_p(va_list ap)
 		return(5);
 	}
 }
+/**
+ * print_r -
+ *
+ *
+ */
+int print_r(va_list ap)
+{
+	char *str;
+	int i = 0;
+	int count = 0;
+
+	str = va_arg(ap, char *);
+
+	while(str[i] != '\0')
+	{
+		i = i + 1;
+	}
+	i = i - 1;
+
+	while(i >= 0)
+	{
+		_putchar(str[i]);
+		count = count + 1;
+		i = i - 1;
+	}
+	return (count);
+}
