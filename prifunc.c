@@ -26,6 +26,7 @@ int print_s(va_list ap)
 	return (_putstr(str));
 }
 
+
 /**
 * print_percent - prints percent
 * @ap: va_list that holds arguments from main func
@@ -35,7 +36,6 @@ int print_percent(__attribute__((unused)) va_list ap)
 {
 	return (_putchar('%'));
 }
-
 /**
 * print_S - print S var
 * @ap: va_list that holds arguments from main func
@@ -51,6 +51,7 @@ int print_S(va_list ap)
 	{
 		str = "(null)";
 	}
+
 
 	while (str[i] != '\0')
 	{
@@ -70,14 +71,27 @@ int print_S(va_list ap)
 	}
 	return (i);
 }
-
 /**
- * print_r - function to reverse string
- * @r: string to print
- * Return: number of printed characters
+ * print_p -
+ *
+ *
  */
-int print_r(va_list ap)
+int print_p(va_list ap)
 {
+	unsigned long int addr;
+	_putchar('0');
+	_putchar('x');
+	addr = va_arg(ap, unsigned long int);
+	return (_printi(addr, 16, 0));
+
+}
+  /**
+  * print_r - function to reverse string
+  * @r: string to print
+  * Return: number of printed characters
+  */
+  int print_r(va_list ap)
+  {
 	char *str;
 	int i = 0;
 	int count = 0;
@@ -97,7 +111,7 @@ int print_r(va_list ap)
 	i = i - 1;
 	while (i >= 0)
 	{
-		_putchar(str[i]);
+		putchar(str[i]);
 		i = i - 1;
 		count = count + 1;
 	}

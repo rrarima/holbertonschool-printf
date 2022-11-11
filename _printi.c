@@ -5,7 +5,7 @@
 * @count: store count
 * Return: count
 */
-int _printi(unsigned int n, int base, int count)
+int _printi(unsigned long int n, int base, int count)
 {
 
 	if (n != 0)
@@ -54,7 +54,7 @@ int print_x_cap(va_list ap)
 * @count: store count
 * Return: count
 */
-int _printi_cap(unsigned int n, int base, int count)
+int _printi_cap(unsigned long int n, int base, int count)
 {
 	if (n !=0)
 	{
