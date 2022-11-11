@@ -48,5 +48,5 @@ int print_p(va_list ap)
 	_putchar('0');
 	_putchar('x');
 	addr = va_arg(ap, unsigned long int);
-	return (_printi(addr, 16, 0));
+	return(_printi(addr, 16, 0) + 2);
 }
