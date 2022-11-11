@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* print_c - print chars
-* @ap: va_list that holds arguments from main func
-* Return: number of chars
+* print_c - prints a char to std out
+* @ap: a char to be printed
+* Return: a count of chars printed
 */
 int print_c(va_list ap)
 {
@@ -10,9 +10,9 @@ int print_c(va_list ap)
 }
 
 /**
-* print_s - print strings
-* @ap: va_list that holds arguments from main func
-* Return: number of chars
+* print_s - prints a string to std out
+* @ap: a string to be printed
+* Return: count of chars printed
 */
 int print_s(va_list ap)
 {
@@ -26,16 +26,16 @@ int print_s(va_list ap)
 	return (_putstr(str));
 }
 
-
 /**
-* print_percent - prints percent
-* @ap: va_list that holds arguments from main func
-* Return: %
+* print_percent - prints the '%' char
+* @ap: var unused
+* Return: cout of chars printed
 */
 int print_percent(__attribute__((unused)) va_list ap)
 {
 	return (_putchar('%'));
 }
+
 /**
 * print_S - print S var
 * @ap: va_list that holds arguments from main func
@@ -71,32 +71,11 @@ int print_S(va_list ap)
 	}
 	return (i);
 }
-/**
- * print_p -
- *
- *
- */
-int print_p(va_list ap)
-{
-	unsigned long int addr;
 
-	addr = va_arg(ap, unsigned long int);
-	if (addr)
-	{
-	_putchar('0');
-	_putchar('x');
-	return(_printi(addr, 16, 0) + 2);
-	}
-	else
-	{
-		_putstr("(nil)");
-		return(5);
-	}
-}
 /**
- * print_r -
- *
- *
+ * print_r -prints a string in reverse to std out
+ * @ap: a string to be printed backwards
+ * Return: a count of chars printed
  */
 int print_r(va_list ap)
 {

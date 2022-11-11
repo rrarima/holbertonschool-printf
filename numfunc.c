@@ -1,8 +1,8 @@
 #include "main.h"
 /**
-* print_i - prints ints
-* @ap: va_list that holds arguments from main func
-* Return: number of ints
+* print_i - prints an int in base 10 to std out
+* @ap: an integer to be printed
+* Return: count of chars printed
 */
 int print_i(va_list ap)
 {
@@ -24,7 +24,7 @@ int print_i(va_list ap)
 	if (num == 0)
 	{
 		_putchar('0');
-		return(1);
+		return (1);
 	}
 	else
 	{
@@ -34,8 +34,8 @@ int print_i(va_list ap)
 }
 
 /**
- * print_b
- * @ap:
+ * print_b - prints an int in base 2 to std out
+ * @ap: an int to be printed
  * Return: count of chars printed
  */
 int print_b(va_list ap)
@@ -48,7 +48,7 @@ int print_b(va_list ap)
 	if (unum == 0)
 	{
 		_putchar('0');
-		return(1);
+		return (1);
 	}
 	else
 	{
@@ -59,8 +59,8 @@ int print_b(va_list ap)
 }
 
 /**
- * print_o
- * @ap:
+ * print_o - prints an int in base 8 to std out
+ * @ap: an int to be printed
  * Return: count of chars printed
  */
 int print_o(va_list ap)
@@ -73,7 +73,7 @@ int print_o(va_list ap)
 	if (num == 0)
 	{
 		_putchar('0');
-		return(1);
+		return (1);
 	}
 	else
 	{
@@ -84,8 +84,8 @@ int print_o(va_list ap)
 }
 
 /**
- * print_u
- * @ap:
+ * print_u - prints an unsigned int in base 10 to std out
+ * @ap: an int to be printed
  * Return: count of chars printed
  */
 int print_u(va_list ap)
@@ -98,7 +98,7 @@ int print_u(va_list ap)
 	if (num == 0)
 	{
 		_putchar('0');
-		return(1);
+		return (1);
 	}
 	else
 	{
@@ -107,9 +107,10 @@ int print_u(va_list ap)
 	}
 
 }
+
 /**
- * print_x
- * @ap:
+ * print_x - prints an int in base 16 to std out
+ * @ap: an int to be printed
  * Return: count of chars printed
  */
 int print_x(va_list ap)
@@ -122,7 +123,7 @@ int print_x(va_list ap)
 	if (num == 0)
 	{
 		_putchar('0');
-		return(1);
+		return (1);
 	}
 	else
 	{
