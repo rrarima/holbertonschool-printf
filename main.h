@@ -35,5 +35,5 @@ int print_x(va_list ap);
 int print_x_cap(va_list ap);
 int print_percent(va_list ap);
 int print_S(va_list ap);
-
+int print_r(va_list ap);
 #endif
