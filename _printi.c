@@ -3,6 +3,7 @@
 * _printi - prints an int in any base below base 37
 * @n: takes an unsigned int
 * @count: count of chars printed
+* @base: the base required for the number to be printed in
 * Return: count
 */
 int _printi(unsigned long int n, int base, int count)
@@ -51,9 +52,11 @@ int print_x_cap(va_list ap)
 }
 
 /**
-* _printi - prints an int in any base below base 37
+* _printi_cap - prints an int in any base below base 37
+* alpha chars are printed in upper cas
 * @n: takes an unsigned int
 * @count: count of chars printed
+* @base: the base required for the number to be printed in
 * Return: count
 */
 int _printi_cap(unsigned long int n, int base, int count)

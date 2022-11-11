@@ -85,13 +85,13 @@ int print_r(va_list ap)
 
 	str = va_arg(ap, char *);
 
-	while(str[i] != '\0')
+	while (str[i] != '\0')
 	{
 		i = i + 1;
 	}
 	i = i - 1;
 
-	while(i >= 0)
+	while (i >= 0)
 	{
 		_putchar(str[i]);
 		count = count + 1;
