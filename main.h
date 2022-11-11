@@ -21,8 +21,8 @@ typedef struct format
 int _putchar(char c);
 int _putstr(char *);
 int _printf(const char *format, ...);
-int _printi(unsigned int n, int base, int count);
-int _printi_cap(unsigned int n, int base, int count);
+int _printi(unsigned long int n, int base, int count);
+int _printi_cap(unsigned long int n, int base, int count);
 int find_char(va_list ap, char c);
 
 int print_c(va_list ap);
@@ -35,5 +35,6 @@ int print_x(va_list ap);
 int print_x_cap(va_list ap);
 int print_percent(va_list ap);
 int print_S(va_list ap);
+int print_p(va_list ap);
 
 #endif

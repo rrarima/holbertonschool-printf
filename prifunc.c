@@ -47,6 +47,7 @@ int print_S(va_list ap)
 	int x;
 	char *str = va_arg(ap, char*);
 
+
 	while (str[i] != '\0')
 	{
 		x = str[i];
@@ -64,4 +65,18 @@ int print_S(va_list ap)
 		}
 	}
 	return (i);
+
+/**
+ * print_p -
+ *
+ *
+ */
+int print_p(va_list ap)
+{
+	unsigned long int addr;
+	_putchar('0');
+	_putchar('x');
+	addr = va_arg(ap, unsigned long int);
+	return (_printi(addr, 16, 0));
+
 }
