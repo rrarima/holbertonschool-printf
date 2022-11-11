@@ -37,4 +37,16 @@ int print_percent(__attribute__((unused)) va_list ap)
 	return (_putchar('%'));
 }
 
-
+/**
+ * print_p -
+ *
+ *
+ */
+int print_p(va_list ap)
+{
+	unsigned long int addr;
+	_putchar('0');
+	_putchar('x');
+	addr = va_arg(ap, unsigned long int);
+	return (_printi(addr, 16, 0));
+}
