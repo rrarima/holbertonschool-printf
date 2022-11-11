@@ -65,7 +65,7 @@ int print_S(va_list ap)
 		}
 	}
 	return (i);
-
+}
 /**
  * print_p -
  *
