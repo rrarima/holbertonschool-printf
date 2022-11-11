@@ -36,5 +36,32 @@ int print_percent(__attribute__((unused)) va_list ap)
 {
 	return (_putchar('%'));
 }
+/**
+* print_S - print S var
+* @ap: va_list that holds arguments from main func
+* Return: i
+*/
+int print_S(va_list ap)
+{
+	int i = 0;
+	int x;
+	char *str = va_arg(ap, char*);
 
-
+	while (str[i] != '\0')
+	{
+		x = str[i];
+		if (x == 92 && str[i + 1] == 'n')
+		{
+			_putchar('x');
+			_putchar('0');
+			_putchar('A');
+			i = i + 1;
+		}
+		else
+		{
+			_putchar(str[i]);
+			i = i + 1;
+		}
+	}
+	return (i);
+}
