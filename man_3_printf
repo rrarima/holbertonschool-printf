@@ -4,18 +4,80 @@ NAME
 	_printf - formatted output conversion
 
 SYNOPSIS
+	#include <stdio.h>
+	#include <stdlib.h>
+	#include <stdarg.h>
+	#include <string.h>
+	#include <limits.h>
 	#include "main.h"
+
+	int _putchar(char c);
+	int _putstr(char *);
 	int _printf(const char *format, ...);
-	_putchar();
+	int _printi(unsigned long int n, int base, int count);
+	int _printi_cap(unsigned long int n, int base, int count);
+	int find_char(va_list ap, char c);
+
+	int print_c(va_list ap);
+	int print_s(va_list ap);
+	int print_i(va_list ap);
+	int print_b(va_list ap);
+	int print_o(va_list ap);
+	int print_u(va_list ap);
+	int print_x(va_list ap);
+	int print_x_cap(va_list ap);
+	int print_percent(va_list ap);
+	int print_S(va_list ap);
+	int print_p(va_list ap);
 
 DESCRIPTION
-	TBA
+
+	Functions within the _printf() family produce output in the following format.  In _printf(), output is written to stdout, the standard output stream;
 
 RETURN VALUE
-	TBA
+
+	These functions return the number of characters printed (excluding the null byte used to end output strings).
+
+	An output error returns a negative value.
+	Format strings are represented by percent signs (%) followed by format modifiers
+
+	Format Modifiers:
+
+	c
+	Stdout receives the ASCII value of the character
+
+	s
+	The const char * argument is a character array (pointer to string).
+
+	i,d
+	Signed decimal notation is applied to the int argument. Writes an integer to stdout
+
+	%
+	In the absence of an argument, a '%' is written. %% is the complete conversion specification.
+
+	b
+	the unsigned int argument is converted to binary
+
+	u,o,x,X
+	u-print unsigned int value, o-print unsigned Octal number for integer
+	x-print hexadecimal values, X-print hexadecimal values (CAPITAL LETTERS)
+
+	S
+	prints the string.
+	Non printable characters (0 < ASCII value < 32 or >= 127) are printed this way: \x,
+	followed by the ASCII code value in hexadecimal (upper case - always 2 characters)
+
+	p
+	This is used to print the pointer type data
+
+	r
+	prints the reversed string
+
+
+
 
 BUGS
-	TBA
+	S-is currently printing extra characters.
 
 SEE ALSO
 	printf(3)
