@@ -35,5 +35,9 @@ The format specifiers tells the function how to take the arguments based on the 
 
 <br>
 <font color=#00C5FF><font size=2><p><strong><i>This is group project contribution by Eps & Matt of #C19</p><strong><i></font>
+**Matt**
++ (https://github.com/bigBadMatt)
+**Eps**
++ (https://github.com/rrarima)
 <p>
 <blockquote><b><i>"You can teach a bird to fly, but you can't a teach fly to bird - Eps"</blockquote>
