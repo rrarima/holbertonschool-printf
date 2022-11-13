@@ -31,9 +31,21 @@ The format specifiers tells the function how to take the arguments based on the 
 | **%P** |Prints a pointer type data.|
 | **%r** |Prints a reversed string.|
 
+## Flow Chart
 
+Outlines the general architecture of the _printf function.
+
+<blockquote class="imgur-embed-pub" lang="en" data-id="wNolOBX"><a href="https://imgur.com/wNolOBX">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+
+For a breakdown of the Sub functions see ./flowcharts
 
 <br>
-<font color=#00C5FF><font size=2><p><strong><i>This is group project contribution by Eps & Matt of #C19</p><strong><i></font>
+<font color=#00C5FF><font size=2><p><strong><i>This was project produced with :heart: for assessment by Holberton School. Autors: Eps & Matt of #C19</p><strong><i></font>
+
+Github Profiles:
+[Eps](https://github.com/rrarima)
+
+[Matt](https://github.com/bigBadMatt)
+
 <p>
 <blockquote><b><i>"You can teach a bird to fly, but you can't a teach fly to bird - Eps"</blockquote>
