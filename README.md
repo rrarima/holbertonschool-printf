@@ -42,11 +42,11 @@ For a breakdown of the Sub functions see [flowcharts](https://github.com/rrarima
 <br>
 <font color=#00C5FF><font size=2><p><strong><i>This was project produced with :heart: for assessment by Holberton School. Autors: Eps & Matt of #C19</p><strong><i></font>
 
-Github Profiles:
+</i>Github Profiles:
 
 [Eps](https://github.com/rrarima)
 
 [Matt](https://github.com/bigBadMatt)
-
+<i>
 <p>
 <blockquote><b><i>"You can teach a bird to fly, but you can't a teach fly to bird - Eps"</blockquote>
