@@ -35,14 +35,15 @@ The format specifiers tells the function how to take the arguments based on the 
 
 Outlines the general architecture of the _printf function.
 
-<blockquote class="imgur-embed-pub" lang="en" data-id="wNolOBX"><a href="https://imgur.com/wNolOBX">View post on imgur.com</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>
+![_printf flow chart](https://imgur.com/wNolOBX.png "_printf flow chart")
 
-For a breakdown of the Sub functions see ./flowcharts
+For a breakdown of the Sub functions see [flowcharts](https://github.com/rrarima/holbertonschool-printf/tree/matt/flowcharts)
 
 <br>
 <font color=#00C5FF><font size=2><p><strong><i>This was project produced with :heart: for assessment by Holberton School. Autors: Eps & Matt of #C19</p><strong><i></font>
 
 Github Profiles:
+
 [Eps](https://github.com/rrarima)
 
 [Matt](https://github.com/bigBadMatt)
